@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./login.css";
+import "./singup.css";
 const Login = () => {
   return (
     <div className="login">

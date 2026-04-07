@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container-split {
+    display: flex;         
+    width: 100%;           
+    min-height: 100vh;    
+}
+
+
+.left-side {        
+    flex: 1; 
+    background-color: #1c1c2b; 
+    color: white;
+   flex-direction: column;
+   flex-direction: column;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+
+img{
+   width: 400px;      
+    height: auto;    
+    margin: 40px auto; 
+}
+
+.right-side {
+    flex: 1; 
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    padding: 40px;
+}
+
+.Texto-Welcome{
+    font-size: 40px;
+    margin-bottom: 60px;
+}
+
+.Texto-SignUp{
+font-size: 20px;
+text-align: center;
+}
+
+
+.tittle-form{
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 200%;
+}
+
+.form-SignUp {
+    background-color: #e2e2e2; 
+    width: 100%;
+    max-width: 450px; 
+    padding: 40px;    
+    border-radius: 40px;
+   border: 1px solid #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.Campos-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.Campos {
+    width: 100%;
+    padding: 15px 25px;      
+    margin-bottom: 20px;     
+    border: 1.5px solid #d1d1d1; 
+    border-radius: 50px;     
+    font-size: 16px;
+    outline: none;           
+    transition: all 0.3s;    
+}
+
+.Campos:focus {
+    border-color: #7A7FFF;   
+    box-shadow: 0 0 8px rgba(122, 127, 255, 0.2);
+}
+
+
+.botones-container {
+    display: flex;
+    gap: 10px;               
+    margin-top: 10px;
+}
+
+.btn-SignUp, .btn-SignIn {
+    flex: 1;
+    padding: 12px;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-SignUp {
+    background-color: #1c1c2b;
+    color: white;
+}
+
+.btn-SignIn {
+    background-color: #f0f0f0;
+    color: black;
+}

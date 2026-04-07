@@ -1,10 +1,10 @@
-import Register from "./Register";
 
+import SignUp from "./pages/SignUp.jsx";
 function App() {
   return (
 
     <div className="App">
-      <Register /> 
+      <SignUp /> 
     </div>
   )
 }

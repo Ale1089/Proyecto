@@ -1,7 +1,14 @@
+import { useNavigate } from 'react-router-dom';
 import "./SignUp.css";
 import ilustracion from "../assets/ilustracion-SignUp.svg";
 
 function SignUp() {
+  const navigate = useNavigate();
+
+  const alHacerClick = (e) => {
+    e.preventDefault();
+    navigate('/Roles'); // Te manda a la página de Roles
+  };
 
   return (
     <div className="container-split">
@@ -23,7 +30,7 @@ function SignUp() {
 
         <h2 className="tittle-form">Create Account</h2>
       
-      <form className="Campos-form">
+      <form className="Campos-form" onSubmit={alHacerClick}>
 
         <input className="Campos" placeholder="UserName" type="text" />
 
@@ -35,7 +42,7 @@ function SignUp() {
 
           <button className="btn-SignUp" type="submit">Submit</button>
 
-          <button className="btn-SignIn" type="submit">Sign In</button>
+          <button className="btn-SignIn" type="button">Sign In</button>
 
         </div>
         

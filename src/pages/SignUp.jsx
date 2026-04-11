@@ -7,7 +7,12 @@ function SignUp() {
 
   const alHacerClick = (e) => {
     e.preventDefault();
-    navigate('/Roles'); // Te manda a la página de Roles
+    navigate('/Roles');
+  };
+
+    const IrSignIn = (e) => {
+    e.preventDefault();
+    navigate('/SignIn'); 
   };
 
   return (
@@ -16,7 +21,6 @@ function SignUp() {
       <div className="left-side">
 
         <h3 className="Texto-Welcome">Welcome!</h3>
-
         <p className="Texto-SignUp">Manage your inventory, organize your team, and take full control of your processes from one place.</p>
 
         <img src={ilustracion} alt="imagen para el registro" />
@@ -42,7 +46,9 @@ function SignUp() {
 
           <button className="btn-SignUp" type="submit">Submit</button>
 
-          <button className="btn-SignIn" type="button">Sign In</button>
+          <button className="btn-SignIn" type="button" onClick={IrSignIn}>
+  Sign In
+</button>
 
         </div>
         

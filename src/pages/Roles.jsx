@@ -23,10 +23,9 @@ If you decide to register a new company, you will be able to set up inventory, c
             <label>
               <input className="inputs-form" type="radio" name="user-type"  value="personal"  defaultChecked  />Member</label>
 
-            <br />
-
             <label>
-              <input className="inputs-form"  type="radio"   name="user-type" value="business" />Owner </label>
+              <input className="inputs-form" type="radio"   name="user-type" value="business" />Owner </label>
+              
           </form>
         </div>
       </div>
